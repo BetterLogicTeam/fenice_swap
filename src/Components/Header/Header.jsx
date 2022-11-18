@@ -25,10 +25,30 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 
-
+function MyVerticallyCenteredModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="md"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+        Connect to a Wallet
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <Connect_wallet />
+      </Modal.Body>
+    </Modal>
+  );
+}
 
 
 function Header() {
+  const [modalShow, setModalShow] = React.useState(false);
+  
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -97,30 +117,16 @@ function Header() {
           </Nav>
           <Nav>
             <Nav.Link href="#deets">
-            
 
-<Button variant="" className="btn button btn-success d-inline-block ml-auto contact" onClick={handleShow}>
-<FaWallet /> Connect wallet
+            <Button variant="" className="btn button btn-success d-inline-block ml-auto contact" onClick={() => setModalShow(true)}>
+            <FaWallet /> Connect wallet
       </Button>
 
-      <Modal
-      className="modal fade "
-        show={show}
-        onHide={handleClose}
-        backdrop="static"
-        keyboard={false}
-      >
-        <Modal.Header closeButton>
-          <Modal.Title className="modal-title fs-5">Connect to a Wallet</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-        <Connect_wallet />
-        </Modal.Body>
-      </Modal>
+            <MyVerticallyCenteredModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
             </Nav.Link>
-            {/* <Nav.Link eventKey={2} href="#memes">
-              Dank memes
-            </Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

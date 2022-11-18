@@ -42,3 +42,57 @@
     box-shadow: 0px 0px 10px -5px rgb(108 108 109);
     border: 2px solid #fff;
 }
+
+@media screen and (max-width:800px) {
+    .css-19kzrtu{
+        padding: 0px !important;
+    }
+    .pool_tab{
+        justify-content: center !important;
+        background: transparent !important;
+    }
+
+    .eth_img{
+        flex-direction: column;
+        display: flex !important;
+    border-radius: 50% !important;
+    height: 57px;
+    width: 57px;
+    }
+
+    .seting{
+        justify-content: center;
+    }
+
+    .tools_img{
+        margin-right: 10px;
+    }
+/* 
+    .all_token{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } */
+
+    
+}
+
+@media (min-width:321px) and (max-width:800px) {
+    /* .ennline{
+        display: flex !important;
+        justify-content: space-between !important;
+    } */
+
+    .tools_img{
+        padding: 0;
+    }
+}
+
+.css-1aquho2-MuiTabs-indicator{
+    display: none;
+}
+
+.eth_img{
+    display: flex;
+}

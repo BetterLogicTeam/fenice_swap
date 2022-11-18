@@ -96,3 +96,7 @@
 .eth_img{
     display: flex;
 }
+
+.exchange_arrow{
+    cursor: pointer;
+}

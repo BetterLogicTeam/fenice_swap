@@ -1,0 +1,23 @@
+.header_img img{
+    height: 70px;
+}
+
+.connect_info span{
+    color: white !important;
+}
+
+@media screen and (max-width:800px) {
+    .naaav_container{
+        text-align: center;
+    }
+
+    .dropdown-item{
+        text-align: center;
+    }
+}
+
+@media (min-width:900px) and (max-width:1150px) {
+    .naaav_container{
+        font-size: 14px;
+    }
+}

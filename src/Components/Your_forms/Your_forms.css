@@ -1,0 +1,34 @@
+.your_forms{
+    background: url(../../Assets/bubble-pattern.png);
+}
+
+.icon_search{
+    font-size: 16px !important;
+    color: white !important;
+}
+
+.achaww{
+    position: absolute;
+    transform: translate3d(0px, 36px, 0px);
+    top: 0;
+    left: 0;
+    will-change: transform;
+}
+
+.your_farms_drop{
+    border: 1px solid rgb(32 34 49) !important;
+    background: transparent;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.your_farms_drop:hover{
+    border: 1px solid rgb(32 34 49) !important;
+    background: #071731 !important;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.menu_2{
+    background: #071731 !important;
+}

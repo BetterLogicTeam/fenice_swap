@@ -1,0 +1,17 @@
+@media screen and (max-width:800px) {
+    .footer_section{
+        text-align: center;
+    }
+
+    .footer_rrow h2{
+        text-align: center !important;
+    }
+
+    .footer_rrow ul{
+        text-align: center !important;
+    }
+}
+
+.btn-close {
+    color: white !important;
+}

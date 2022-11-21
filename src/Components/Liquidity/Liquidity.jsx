@@ -7,31 +7,11 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import bnb from '../../Assets/bnb.png';
-import eth1 from '../../Assets/eth1.jpg';
-import sushi from '../../Assets/sushi.jpg';
-import wbtr from '../../Assets/wbtr.jpg';
-import mim from '../../Assets/mim.jpg';
-import spell from '../../Assets/spell.webp';
-import ice from '../../Assets/ice.webp';
-import usdc from '../../Assets/usdc.jpg';
-import usdt from '../../Assets/usdt.jpg';
-import dai from '../../Assets/dai.png';
-import frax from '../../Assets/frax.webp';
-import ADA from '../../Assets/ADA.png';
-import ALPHA from '../../Assets/ALPHA.png';
-import arrow_down from '../../Assets/arrow_down.png';
-import ATM from '../../Assets/ATM.png';
-import ATOM from '../../Assets/ATOM.png';
-import BAKE from '../../Assets/BAKE.png';
-import bLBT from '../../Assets/bLBT.png';
-import ANKR from '../../Assets/ANKR.png';
-import wbnb from '../../Assets/wbnb.png';
-import { IoIosArrowDown } from 'react-icons/io';
 import { RiSettings5Fill } from 'react-icons/ri';
 import Connect_wallet from '../Header/Connect_wallet';
 import Fcc from '../Landing/Fcc';
 import Bnb from '../Landing/Bnb';
+import "./Liquidity.css";
 
 
 function TabPanel(props) {
@@ -319,7 +299,7 @@ Unlock Wallet
                             </div>
 
                             <div className="wallet_btn mr_set">
-                                <a href="ETH.html"> <button className="btn button btn-success">Add Liquidity +</button></a>
+                                <a href=""> <button className="btn button btn-success">Add Liquidity +</button></a>
                             </div>
 
                             <div className="">

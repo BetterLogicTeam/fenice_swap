@@ -54,7 +54,7 @@ function Header() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <div>
+    <div className='navv_main'>
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container className="naaav_container">
       <Link to="/"><Navbar.Brand className='header_img' href="#home"><img  src={logo} alt="" /></Navbar.Brand></Link>

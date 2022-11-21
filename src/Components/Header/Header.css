@@ -14,10 +14,22 @@
     .dropdown-item{
         text-align: center;
     }
+
+    .navv_main{
+        display: none !important;
+    }
+
+    .modal{
+        margin-top: 80px !important;
+    }
 }
 
 @media (min-width:900px) and (max-width:1150px) {
     .naaav_container{
         font-size: 14px;
     }
+}
+
+.modal-title{
+    color: white !important;
 }

@@ -1,0 +1,64 @@
+.drawwer_heeader{
+    background-color: linear-gradient(90deg,#6a0ea6,#520b9e) !important;
+    border-bottom: 1px solid #343436;
+}
+
+.css-12i7wg6-MuiPaper-root-MuiDrawer-paper{
+    background-color: #520b9e !important;
+}
+
+.accordion{
+    --bs-accordion-color: white;
+    --bs-accordion-bg: #520b9e;
+}
+
+.accordion-button{
+    color: white;
+}
+
+.DrawerHeader img{
+    width: 30px;
+}
+
+
+.accor_body{
+    display: flex;
+    flex-direction: column;
+}
+
+.accor_item{
+    margin-bottom: 12px;
+}
+
+.accor_head{
+    font-size: 30px !important;
+}
+
+.dev{
+    color: white;
+}
+
+.css-hyum1k-MuiToolbar-root{
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+@media (min-width:800px) and (max-width:1000000px) {
+    .drawwer_main{
+        display: none !important;
+    }
+}
+
+.css-8u39c-MuiTypography-root{
+    margin-left: 10px !important;
+}
+
+.drawwwe img{
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17px;
+    margin-right: 55px;
+    margin-bottom: 16px;
+}

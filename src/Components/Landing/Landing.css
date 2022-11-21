@@ -6,6 +6,8 @@
     color: white !important;
     font-size: 17px;
     font-weight: 700;
+    margin-top: 20px;
+    margin-left: -15px;
 }
 
 .bnbRotate {
@@ -56,8 +58,9 @@
         flex-direction: column;
         display: flex !important;
     border-radius: 50% !important;
-    height: 57px;
-    width: 57px;
+    height: 57px !important;
+    width: 57px !important;
+    padding: 6px 15px;
     }
 
     .seting{
@@ -78,6 +81,28 @@
     } */
 
     
+}
+
+@media screen and (max-width:375px) {
+    .eth_img{
+    margin-right: 7px;
+    margin-left: -10px;
+    }
+
+    
+}
+
+@media screen and (max-width:500px) {
+    .farm_usd_set{
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width:375px) and (max-width:424px) {
+    .eth_img{
+    margin-right: 5px;
+    margin-left: -4px;
+    }
 }
 
 @media (min-width:321px) and (max-width:800px) {

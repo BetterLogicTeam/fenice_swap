@@ -22,12 +22,14 @@ import Explore from './Components/Explore/Explore';
 import Open_market from './Components/Open_market/Open_market';
 import Game_assets from './Components/Game_assets/Game_assets';
 import Launchpad from './Components/Launchpad/Launchpad';
+import Drawwer from './Components/Drawwer/Drawwer';
 
 function App() {
   return (
     <div className="">
       <BrowserRouter>
       <Header />
+      <Drawwer />
       <Routes>
       <Route exact path="/" element={<Index_main />} />
       <Route exact path="/Browse" element={<Browse />} />

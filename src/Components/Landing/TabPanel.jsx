@@ -13,6 +13,7 @@ import { RiSettings5Fill } from 'react-icons/ri';
 import Connect_wallet from '../Header/Connect_wallet';
 import Fcc from './Fcc';
 import Bnb from './Bnb';
+import { CgClose } from 'react-icons/cg';
 
 function MyVerticallyCenteredModal(props) {
     return (
@@ -23,8 +24,8 @@ function MyVerticallyCenteredModal(props) {
             centered
         >
             <Modal.Header closeButton>
-                <Modal.Title id="contained-modal-title-vcenter">
-                    Connact to a Wallet
+                <Modal.Title id="contained-modal-title-vcenter text-white">
+                    Connect to a Wallet
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
@@ -125,7 +126,7 @@ export default function BasicTabs() {
                                                 <div className="modal-content contennt">
                                                     <div className="modal-header">
                                                         <h1 className="modal-title fs-5" id="exampleModalLabel">Settings </h1>
-                                                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"><CgClose /></button>
                                                     </div>
                                                     <div className="modal-body">
                                                         <div class="overlay10-content">
@@ -250,7 +251,7 @@ export default function BasicTabs() {
                                                 <div className="modal-content contennt">
                                                     <div className="modal-header">
                                                         <h1 className="modal-title fs-5" id="exampleModalLabel">Settings </h1>
-                                                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"><CgClose /></button>
                                                     </div>
                                                     <div className="modal-body">
                                                         <div class="overlay10-content">
@@ -302,7 +303,7 @@ export default function BasicTabs() {
                             </div>
 
                             <div className="wallet_btn mr_set">
-                                <a href=""> <button className="btn button btn-success">Add Liquidity +</button></a>
+                                <a href="#"> <button className="btn button btn-success">Add Liquidity +</button></a>
                             </div>
 
                             <div className="">

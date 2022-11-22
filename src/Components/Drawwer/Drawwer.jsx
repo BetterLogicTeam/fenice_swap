@@ -35,6 +35,7 @@ import { FaTelegram } from 'react-icons/fa';
 import { TfiYoutube } from 'react-icons/tfi';
 import { ImFacebook } from 'react-icons/im';
 import Index_main from '../Index_main';
+import { RiArrowLeftSLine } from 'react-icons/ri';
 
 
 function MyVerticallyCenteredModal(props) {
@@ -120,7 +121,7 @@ function Drawwer() {
     const [open, setOpen] = React.useState(false);
 
     const handleDrawerOpen = () => {
-        setOpen(true);
+        setOpen(!open);
     };
 
     const handleDrawerClose = () => {
@@ -167,29 +168,29 @@ function Drawwer() {
                     open={open}
                 >
                     <DrawerHeader>
-                    <Link className="drawwwe" to="/"><img src={logo} alt="" /></Link>
+                    <Link className="drawwwe" to="/" onClick={handleDrawerOpen}><img src={logo} alt="" /></Link>
                         <IconButton onClick={handleDrawerClose}>
-                            {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+                            {theme.direction === 'ltr' ? <RiArrowLeftSLine className='text-white' /> : <ChevronRightIcon />}
                         </IconButton>
                     </DrawerHeader>
                     <Divider />
-                    <Link to="/"><div className='py-3 dev ms-4'><IoHome className="me-1" /> Home</div></Link>
-                    <Accordion defaultActiveKey="0">
+                    <Link className="dev_lenk" to="/" onClick={handleDrawerOpen}><div className='py-3 dev ms-4'><IoHome className="me-1" /> Home</div></Link>
+                    <Accordion >
                         <Accordion.Item eventKey="0">
                             <Accordion.Header className="accor_head"><TbArrowsRightLeft className="me-2" /> Pool</Accordion.Header>
                             <Accordion.Body className='accor_body'>
-                                <Link className='accor_item' to="/Browse">
+                                <Link className='accor_item' to="/Browse" onClick={handleDrawerOpen}>
                                     Browse
                                 </Link>
-                                <Link className='accor_item' to="/Import">Import</Link>
-                                <Link className='accor_item' to="/Migrate">Migrate</Link>
+                                <Link className='accor_item' to="/Import" onClick={handleDrawerOpen}>Import</Link>
+                                <Link className='accor_item' to="/Migrate" onClick={handleDrawerOpen}>Migrate</Link>
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="1">
                             <Accordion.Header className="accor_head"><TbArrowsRightLeft className="me-2" /> Trade</Accordion.Header>
                             <Accordion.Body className='accor_body'>
-                                <Link className='accor_item' to="/">Exchange</Link>
-                                <Link className='accor_item' to="/Liquidity">
+                                <Link className='accor_item' to="/" onClick={handleDrawerOpen}>Exchange</Link>
+                                <Link className='accor_item' to="/Liquidity" onClick={handleDrawerOpen}>
                                     Liquidity
                                 </Link>
                             </Accordion.Body>
@@ -198,8 +199,8 @@ function Drawwer() {
                         <Accordion.Item eventKey="2">
                             <Accordion.Header className="accor_head"><TbArrowsRightLeft className="me-2" /> Game</Accordion.Header>
                             <Accordion.Body className='accor_body'>
-                                <Link className='accor_item' to="/"><FaGamepad className="me-1" /> Game</Link>
-                                <Link className='accor_item' to="/">
+                                <Link className='accor_item' to="/" onClick={handleDrawerOpen}><FaGamepad className="me-1" /> Game</Link>
+                                <Link className='accor_item' to="/" onClick={handleDrawerOpen}>
                                     <FaGamepad className="me-1" /> Game 2
                                 </Link>
                             </Accordion.Body>
@@ -208,38 +209,38 @@ function Drawwer() {
                         <Accordion.Item eventKey="3">
                             <Accordion.Header className="accor_head"><TbArrowsRightLeft className="me-2" /> Farms</Accordion.Header>
                             <Accordion.Body className='accor_body'>
-                                <Link className='accor_item' to="/Your_forms">Your Forms</Link>
-                                <Link className='accor_item' to="/All_forms">
+                                <Link className='accor_item' to="/Your_forms" onClick={handleDrawerOpen}>Your Forms</Link>
+                                <Link className='accor_item' to="/All_forms" onClick={handleDrawerOpen}>
                                     All Forms
                                 </Link>
                             </Accordion.Body>
                         </Accordion.Item>
 
-                        <Link to="/"><div className='py-3 dev ms-4'><FaGamepad className="me-1" /> NFT</div></Link>
+                        <Link className="dev_lenk" to="/" onClick={handleDrawerOpen}><div className='py-3 dev ms-4'><FaGamepad className="me-1" /> NFT</div></Link>
 
                         <Accordion.Item eventKey="4">
                             <Accordion.Header className="accor_head"><TbArrowsRightLeft className="me-2" /> NFT Marketplace</Accordion.Header>
                             <Accordion.Body className='accor_body'>
-                                <Link className='accor_item' to="/Explore"><FaGamepad className="me-1" /> Explore</Link>
-                                <Link className='accor_item' to="/Open_market"><FaGamepad className="me-1" /> Open Market</Link>
-                                <Link className='accor_item' to="/Game_assets">
+                                <Link className='accor_item' to="/Explore" onClick={handleDrawerOpen}><FaGamepad className="me-1" /> Explore</Link>
+                                <Link className='accor_item' to="/Open_market" onClick={handleDrawerOpen}><FaGamepad className="me-1" /> Open Market</Link>
+                                <Link className='accor_item' to="/Game_assets" onClick={handleDrawerOpen}>
                                     <FaGamepad className="me-1" /> Game Assets
                                 </Link>
                             </Accordion.Body>
                         </Accordion.Item>
 
-                        <Link to="/Launchpad"><div className='py-3 dev ms-4'><FaGamepad className="me-1" /> Launchpad</div></Link>
+                        <Link className="dev_lenk" to="/Launchpad" onClick={handleDrawerOpen}><div className='py-3 dev ms-4'><FaGamepad className="me-1" /> Launchpad</div></Link>
 
                         <Accordion.Item eventKey="5">
                             <Accordion.Header className="accor_head"><TbArrowsRightLeft className="me-2" /> Contact</Accordion.Header>
                             <Accordion.Body className='accor_body'>
-                                <a className='accor_item' href="https://twitter.com/wonder_swap" target="_blank">
+                                <a onClick={handleDrawerOpen} className='accor_item' href="https://twitter.com/wonder_swap" target="_blank">
                                     <BsTwitter /> Twitter
                                 </a>
-                                <a className='accor_item' href="https://www.facebook.com/profile.php?id=100083933690337" target="_blank"><ImFacebook /> Facebook</a>
-                                <a className='accor_item' href="https://www.instagram.com/wonderswap/" target="_blank"><BsInstagram /> Instagram</a>
-                                <a className='accor_item' href="https://t.me/wonderswap_official" target="_blank"><FaTelegram /> Telegram</a>
-                                <a className='accor_item' href="https://www.youtube.com/channel/UChsKP3LJAlSKOR8QY54kRcg" target="_blank"><TfiYoutube /> Youtube</a>
+                                <a onClick={handleDrawerOpen} className='accor_item' href="https://www.facebook.com/profile.php?id=100083933690337" target="_blank"><ImFacebook /> Facebook</a>
+                                <a onClick={handleDrawerOpen} className='accor_item' href="https://www.instagram.com/wonderswap/" target="_blank"><BsInstagram /> Instagram</a>
+                                <a onClick={handleDrawerOpen} className='accor_item' href="https://t.me/wonderswap_official" target="_blank"><FaTelegram /> Telegram</a>
+                                <a onClick={handleDrawerOpen} className='accor_item' href="https://www.youtube.com/channel/UChsKP3LJAlSKOR8QY54kRcg" target="_blank"><TfiYoutube /> Youtube</a>
                             </Accordion.Body>
                         </Accordion.Item>
                     </Accordion>

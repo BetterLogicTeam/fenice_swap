@@ -43,8 +43,8 @@
 
 .dev_lenk{
     background-color: #520b9e !important;
-    border: 1px solid white;
-    border-bottom: none !important;
+    /* border: 1px solid white;
+    border-bottom: none !important; */
     border-radius: 4px 4px 0 0;
 }
 
@@ -69,6 +69,7 @@
 
 .css-8u39c-MuiTypography-root{
     margin-left: 10px !important;
+    display: contents !important;
 }
 
 .drawwwe img{

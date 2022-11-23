@@ -127,3 +127,8 @@
 .exchange_arrow{
     cursor: pointer;
 }
+
+.nav-pills .nav-link{
+    background-color: #6A0EA6 !important;
+    color: white !important;
+}

@@ -131,7 +131,7 @@ function Drawwer() {
         <div className='drawwer_main'>
             <Box className='drawwer_heeader' sx={{ display: 'flex' }}>
                 <CssBaseline />
-                <AppBar className='drawwer_heeader' position="fixed" open={open}>
+                <AppBar style={{backgroundColor: "#520b9e"}} className='drawwer_heeader' position="fixed" open={open}>
                     <Toolbar>
                         <IconButton
                             color="inherit"
@@ -167,14 +167,14 @@ function Drawwer() {
                     anchor="left"
                     open={open}
                 >
-                    <DrawerHeader>
+                    <DrawerHeader style={{backgroundColor: "#520b9e"}}>
                     <Link className="drawwwe" to="/" onClick={handleDrawerOpen}><img src={logo} alt="" /></Link>
                         <IconButton onClick={handleDrawerClose}>
                             {theme.direction === 'ltr' ? <RiArrowLeftSLine className='text-white' /> : <ChevronRightIcon />}
                         </IconButton>
                     </DrawerHeader>
                     <Divider />
-                    <Link className="dev_lenk" to="/" onClick={handleDrawerOpen}><div className='py-3 dev ms-4'><IoHome className="me-1" /> Home</div></Link>
+                    <Link className="dev_lenk" style={{backgroundColor: "#520b9e"}} to="/" onClick={handleDrawerOpen}><div className='py-3 dev ms-4'><IoHome className="me-1" /> Home</div></Link>
                     <Accordion >
                         <Accordion.Item eventKey="0">
                             <Accordion.Header className="accor_head"><TbArrowsRightLeft className="me-2" /> Pool</Accordion.Header>
@@ -216,7 +216,7 @@ function Drawwer() {
                             </Accordion.Body>
                         </Accordion.Item>
 
-                        <Link className="dev_lenk" to="/" onClick={handleDrawerOpen}><div className='py-3 dev ms-4'><FaGamepad className="me-1" /> NFT</div></Link>
+                        <Link className="dev_lenk" to="/" style={{backgroundColor: "#520b9e"}} onClick={handleDrawerOpen}><div className='py-3 dev ms-4'><FaGamepad className="me-1" /> NFT</div></Link>
 
                         <Accordion.Item eventKey="4">
                             <Accordion.Header className="accor_head"><TbArrowsRightLeft className="me-2" /> NFT Marketplace</Accordion.Header>
@@ -229,7 +229,7 @@ function Drawwer() {
                             </Accordion.Body>
                         </Accordion.Item>
 
-                        <Link className="dev_lenk" to="/Launchpad" onClick={handleDrawerOpen}><div className='py-3 dev ms-4'><FaGamepad className="me-1" /> Launchpad</div></Link>
+                        <Link className="dev_lenk" to="/Launchpad" style={{backgroundColor: "#520b9e"}} onClick={handleDrawerOpen}><div className='py-3 dev ms-4'><FaGamepad className="me-1" /> Launchpad</div></Link>
 
                         <Accordion.Item eventKey="5">
                             <Accordion.Header className="accor_head"><TbArrowsRightLeft className="me-2" /> Contact</Accordion.Header>

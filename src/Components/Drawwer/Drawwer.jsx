@@ -128,7 +128,7 @@ function Drawwer() {
         setOpen(false);
     };
     return (
-        <div style={{backgroundColor: "#520b9e"}} className='drawwer_main'>
+        <div className='drawwer_main'>
             <Box className='drawwer_heeader' sx={{ display: 'flex' }}>
                 <CssBaseline />
                 <AppBar style={{backgroundColor: "#520b9e"}} className='drawwer_heeader' position="fixed" open={open}>

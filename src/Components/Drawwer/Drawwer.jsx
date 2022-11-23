@@ -142,7 +142,7 @@ function Drawwer() {
                         >
                             <MenuIcon />
                         </IconButton>
-                        <Typography variant="h6" noWrap component="div">
+                        <Typography style={{display: "contents"}} variant="h6" noWrap component="div">
                             <Button variant="" className="btn button btn-success d-inline-block ml-auto contact" onClick={() => setModalShow(true)}>
                                 <FaWallet /> Connect wallet
                             </Button>
@@ -215,8 +215,11 @@ function Drawwer() {
                                 </Link>
                             </Accordion.Body>
                         </Accordion.Item>
+                    </Accordion>
 
-                        <Link className="dev_lenk" to="/" style={{backgroundColor: "#520b9e"}} onClick={handleDrawerOpen}><div className='py-3 dev ms-4'><FaGamepad className="me-1" /> NFT</div></Link>
+                    <Link className="dev_lenk" to="/" style={{backgroundColor: "#520b9e"}} onClick={handleDrawerOpen}><div className='py-3 dev ms-4'><FaGamepad className="me-1" /> NFT</div></Link>
+
+                    <Accordion >
 
                         <Accordion.Item eventKey="4">
                             <Accordion.Header className="accor_head"><TbArrowsRightLeft className="me-2" /> NFT Marketplace</Accordion.Header>
@@ -228,10 +231,14 @@ function Drawwer() {
                                 </Link>
                             </Accordion.Body>
                         </Accordion.Item>
+                        
+                    </Accordion>
 
-                        <Link className="dev_lenk" to="/Launchpad" style={{backgroundColor: "#520b9e"}} onClick={handleDrawerOpen}><div className='py-3 dev ms-4'><FaGamepad className="me-1" /> Launchpad</div></Link>
+                    <Link className="dev_lenk" to="/Launchpad" style={{backgroundColor: "#520b9e"}} onClick={handleDrawerOpen}><div className='py-3 dev ms-4'><FaGamepad className="me-1" /> Launchpad</div></Link>
 
-                        <Accordion.Item eventKey="5">
+                    <Accordion >
+
+                    <Accordion.Item eventKey="5">
                             <Accordion.Header className="accor_head"><TbArrowsRightLeft className="me-2" /> Contact</Accordion.Header>
                             <Accordion.Body className='accor_body'>
                                 <a onClick={handleDrawerOpen} className='accor_item' href="https://twitter.com/wonder_swap" target="_blank">
@@ -243,7 +250,9 @@ function Drawwer() {
                                 <a onClick={handleDrawerOpen} className='accor_item' href="https://www.youtube.com/channel/UChsKP3LJAlSKOR8QY54kRcg" target="_blank"><TfiYoutube /> Youtube</a>
                             </Accordion.Body>
                         </Accordion.Item>
+                        
                     </Accordion>
+                    
                 </Drawer>
                 <Main open={open}>
                     <DrawerHeader />
